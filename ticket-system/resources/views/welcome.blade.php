@@ -85,8 +85,8 @@
                 </div>
 
                 <div class="links">
-                    <a href="{{ route('ticket') }}">Ticket</a>
-                    <a href="{{ route('article') }}">Article</a>
+                    <a href="{{ route('ticket.index') }}">Ticket</a>
+                    <a href="{{ route('article.index') }}">Article</a>
                 </div>
             </div>
         </div>
