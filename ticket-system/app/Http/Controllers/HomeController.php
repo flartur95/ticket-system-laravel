@@ -4,6 +4,12 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
+use App\Http\Controllers\Controller;
+use App\Http\Requests;
+
+use App\Article;
+
+
 class HomeController extends Controller
 {
     /**
@@ -23,6 +29,19 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+
+
+       /**
+     * Display the specified resource.
+     *
+     * @param  int  $id
+     *
+     * @return \Illuminate\View\View
+     */
+
+        $article = Article::all();
+
+        return view('home', compact('article'));
+    
     }
 }
