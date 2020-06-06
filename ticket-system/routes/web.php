@@ -21,5 +21,5 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route::resource('ticket', 'TicketController');
-Route::resource('article', 'ArticleController');
+Route::resource('ticket', 'TicketController')->name('ticket');
+Route::resource('article', 'ArticleController')->name('article');
